@@ -1,0 +1,75 @@
+
+.foodcard{
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: center; */
+    align-items: center;
+    border: 3px solid gold;
+    
+    width: 360px;
+    /* height: 320px; */
+    padding: 15px 0;
+    margin: 20px;
+}
+
+.foodcard-info{
+    padding-left: 20px;
+}
+.foodcard-info h3{
+    font-family: "Oswald";
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.foodcard-info #text{
+    color: gray;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+}
+
+.foodcard-info #price{
+    color: yellow;
+    background-color: rgb(110, 38, 14);
+    display: inline-block;
+    padding: 4px 7px;
+    border-radius: 3px;
+}
+
+.foodcard:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .foodcard{
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+        justify-content: center;
+        width: 250px;
+        /* height: 320px; */
+        
+    }
+    .foodcard-image img{
+        height: 100px;
+        width: 100px;
+    }
+    .foodcard-info h3{
+        font-size: 16px;
+        font-weight: 600;
+        
+        padding-bottom: 3px;
+    }
+    .foodcard-info #text{
+        font-size: 12px;
+        padding-bottom: 5.5px;
+    }
+    
+    .foodcard-info #price{
+        font-size: 11px;
+        padding: 2.5px 5px;
+        border-radius: 3px;
+    }
+}
