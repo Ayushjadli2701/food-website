@@ -12,6 +12,9 @@
     align-items: center;
     /* overflow: hidden; */
 }
+.order-searching {
+    background-color: blanchedalmond;
+  }
 .order-now{
     color: orangered;
     font-family: "Lilita One", cursive;
@@ -48,9 +51,13 @@
 }
 .foodcards{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     /* overflow: hidden; */
-    padding-left: 15.3vw;
+    /* padding-left: 15.3vw; */
+   
+    width: 90%;
     gap: 30px;
     padding-bottom: 5vw;
 

@@ -14,7 +14,7 @@ const Foodcard = ({name, price, text, image, type}) => {
       <div className='foodcard-info'>
         <h3>{name}</h3>
         <p id="text">{text}</p>
-        <p id ="price">{`$ ${price}`}</p>
+        <p id ="price">{`$ ${price.toFixed(2)}`}</p>
       </div>  
           
     </div>

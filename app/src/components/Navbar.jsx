@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/Navbar.css"
 
 
-const  Navbar = () => {
+const  Navbar = ({searchFood}) => {
   return (
     <div className='uppernav'>
       <div className='logo-div'>
@@ -16,7 +16,7 @@ const  Navbar = () => {
         <a className='nav-item' href = "/home">Contact us</a>
       </div>
       <div className='search-bar'>
-        <input type = "input" placeholder='Search'></input>
+        <input type = "input" placeholder='Search' onChange={searchFood}></input>
       </div>
     </div>
   )
